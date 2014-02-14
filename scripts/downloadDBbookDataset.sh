@@ -18,4 +18,5 @@ rm *.zip
 
 mv ${_DATA_TRAIN}.tsv ${_DATA_TRAIN}.tmp
 sed 1d ${_DATA_TRAIN}.tmp > ${_DATA_TRAIN}.tsv
+# remove the head line of that file
 rm ${_DATA_TRAIN}.tmp
