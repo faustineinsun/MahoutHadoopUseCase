@@ -16,7 +16,7 @@ unzip ${_DATA_TRAIN}.zip
 unzip task2_useritem_evaluation_data.tsv.zip
 rm *.zip
 
-mv ${_DATA_TRAIN}.tsv ${_DATA_TRAIN}.tmp
-sed 1d ${_DATA_TRAIN}.tmp > ${_DATA_TRAIN}.tsv
+#mv ${_DATA_TRAIN}.tsv ${_DATA_TRAIN}.tmp
+#sed 1d ${_DATA_TRAIN}.tmp > ${_DATA_TRAIN}.tsv
 # remove the head line of that file
-rm ${_DATA_TRAIN}.tmp
+#rm ${_DATA_TRAIN}.tmp

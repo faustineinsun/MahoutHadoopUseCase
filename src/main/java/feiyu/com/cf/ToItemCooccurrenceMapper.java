@@ -1,6 +1,6 @@
-/*
+/**
  * Step 3
- * 
+ * @author feiyu
  */
 package feiyu.com.cf;
 
