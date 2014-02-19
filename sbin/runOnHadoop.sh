@@ -4,8 +4,8 @@ _DATA_DIR="src/main/resources/datasets/"
 _HADOOP_DIR="/Users/feiyu/workspace/Hadoop/"
 
 # format hdfs
-rm -rf ${_HADOOP_DIR}hadooptmp/hadoop-feiyu/*
-hadoop namenode -format
+#rm -rf ${_HADOOP_DIR}hadooptmp/hadoop-feiyu/*
+#hadoop namenode -format
 
 # start hadoop
 ${_HADOOP_DIR}hadoop-2.2.0/sbin/start-dfs.sh 
@@ -21,8 +21,8 @@ cd $_PROJECT_HOME
 find ../src -name ".DS_Store" -depth -exec rm {} \;
 
 # mvn package, build the runnable JAR file
-mvn clean compile assembly:single
-zip -d target/ESWC-Challenge-RecSys_2014-1.0-SNAPSHOT-jar-with-dependencies.jar META-INF/LICENSE
+#mvn clean compile assembly:single
+#zip -d target/ESWC-Challenge-RecSys_2014-1.0-SNAPSHOT-jar-with-dependencies.jar META-INF/LICENSE
 
-hadoop jar target/ESWC-Challenge-RecSys_2014-1.0-SNAPSHOT-jar-with-dependencies.jar TopNRecommender
-hadoop fs -cat /user/feiyu/${_DATA_DIR}TrainDataToUserVector_Out/part-r-00000
+#hadoop jar target/ESWC-Challenge-RecSys_2014-1.0-SNAPSHOT-jar-with-dependencies.jar TopNRecommender
+#hadoop fs -cat /user/feiyu/${_DATA_DIR}TrainDataToUserVector_Out/part-r-00000

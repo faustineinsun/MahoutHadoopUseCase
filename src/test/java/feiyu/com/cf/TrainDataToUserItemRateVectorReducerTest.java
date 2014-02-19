@@ -1,3 +1,6 @@
+/**
+ * @author feiyu
+ */
 package feiyu.com.cf;
 
 import java.io.IOException;
@@ -32,7 +35,7 @@ public class TrainDataToUserItemRateVectorReducerTest {
 
     Vector vector = new RandomAccessSparseVector(Integer.MAX_VALUE);
     vector.set(1572, 1);
-    vector.set(100, -1);
+    //vector.set(100, -1);
 
     driver.withInput(new VarLongWritable(6870), texts)
     .withOutput(new VarLongWritable(6870), new VectorWritable(vector))
