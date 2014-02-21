@@ -3,4 +3,4 @@
 `./start.sh`(It's used to download the dataset)    
 `./stopHadoop.sh`  
 `./runOnHadoop.sh`(Be careful! It formats the HDFS)      
-`./cleanUp.sh`  
+`./cleanUpBeforeCommit.sh`  
