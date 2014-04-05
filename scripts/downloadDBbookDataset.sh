@@ -1,8 +1,8 @@
 #! /bin/bash
-_PROJECT_HOME="/Users/feiyu/workspace/ESWC-Challenge-RecSys_2014/"
+_PROJECT_HOME="/Users/feiyu/workspace/MahoutHadoopUseCase/"
 _DATA="src/main/resources/datasets/"
 _DATA_HOME="${_PROJECT_HOME}${_DATA}"
-#mkdir $_DATA_HOME
+mkdir -p $_DATA_HOME
 cd $_DATA_HOME
 
 _DATA_TRAIN="DBbook_train_binary"
@@ -24,12 +24,13 @@ rm *.zip
 #echo remove the head line of that file
 #rm ${_DATA_TRAIN}.tmp
 
-echo execute feiyu.com.preprocessingdata.PreprocessingData 
 cd $_PROJECT_HOME
-mvn exec:java -DmainClass=feiyu.com.preprocessingdata.PreprocessingData
 
-find ${_PROJECT_HOME}/src -name ".DS_Store" -depth -exec rm {} \;
-echo Removed all the ".DS_Store" files in src dir
+echo ----- install program
+mvn clean install
+
+echo ----- execute feiyu.com.preprocessingdata.PreprocessingData 
+mvn exec:java -DmainClass=feiyu.com.preprocessingdata.PreprocessingData
 
 mkdir ${_DATA_HOME}preferenceData
 cp ${_DATA_HOME}train.txt ${_DATA_HOME}preferenceData
