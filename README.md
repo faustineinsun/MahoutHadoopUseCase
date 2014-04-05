@@ -1,7 +1,7 @@
 ###Mahout Hadoop Use Case    
 
 **Purpose of this program**:   
-- ~~[Hadoop 2.2.0 is incompatible with mahout 0.8 problem](https://issues.apache.org/jira/browse/MAHOUT-1329)~~ (problem resolved on 25/Feb/14 10:02), I would like to figure out an alternative method of running use case on Hadoop 2.2.0 with Mahout 0.8 collaborative filtering library         
+- ~~[Hadoop 2.2.0 is incompatible with mahout 0.8 problem](https://issues.apache.org/jira/browse/MAHOUT-1329)~~ (problem was resolved on 25/Feb/14), I would like to figure out an alternative method of running use case on Hadoop 2.2.0 with Mahout 0.8 collaborative filtering library         
 - Run hadoop program on Eclipse and Yarn    
 
 ---
