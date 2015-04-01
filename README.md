@@ -7,7 +7,7 @@
 ---
 
 **Steps**:
-- [Setup Hadoop Yarn, hadoop 2.2.0](http://faustineinsun.github.io/Setup-Hadoop-Yarn/)    
+- [Setup Hadoop Yarn, hadoop 2.2.0](http://faustineinsun.blogspot.com/2014/01/setup-hadoop-220-yarn-on-single-node.html)
 - `sbin/start_classicCF.sh`   
     - This script is used to download the dataset,    
     - start and put data onto the hadoop HDFS,        
