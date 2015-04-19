@@ -1,7 +1,7 @@
 #! /bin/bash
-_PROJECT_HOME="/Users/feiyu/workspace/MahoutHadoopUseCase/"
+_PROJECT_HOME=$MahoutHadoopUseCase_HOME
 _DATA_DIR="src/main/resources/datasets/"
-_HADOOP_DIR="/Users/feiyu/workspace/Hadoop/"
+_HADOOP_DIR=$HADOOP_HOME
 
 hdfs dfs -mkdir -p input/preferenceData
 cd ${_PROJECT_HOME}${_DATA_DIR}

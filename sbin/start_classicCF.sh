@@ -1,5 +1,5 @@
 #! /bin/bash
-_PROJECT_HOME="/Users/feiyu/workspace/MahoutHadoopUseCase/"
+_PROJECT_HOME=$MahoutHadoopUseCase_HOME
 
 #cd $_PROJECT_HOME
 #mvn exec:exe

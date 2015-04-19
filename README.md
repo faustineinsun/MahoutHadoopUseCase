@@ -12,6 +12,7 @@
     - This script is used to download the dataset,    
     - start and put data onto the hadoop HDFS,        
     - build a runnable Jar of this project  
+- Setup `MahoutHadoopUseCase_HOME` and `HADOOP_HOME` in `~/.bash_profile`
 - [Set up eclipse plugin for hadoop 2.2.0 (Mac OS X 10.9.1)](http://faustineinsun.blogspot.com/2014/01/setup-eclipse-plugin-for-hadoop-220-mac.html)    
 - Import this Maven program into eclipse    
 - In eclipse, open the file `RecommenderJob.java` in folder `feiyu.com.cfex`, and input the arguments as follows, later click `Run As -> Run on Hadoop`  

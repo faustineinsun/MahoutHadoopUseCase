@@ -1,5 +1,5 @@
 #! /bin/bash
-_PROJECT_HOME="/Users/feiyu/workspace/MahoutHadoopUseCase/"
+_PROJECT_HOME=$MahoutHadoopUseCase_HOME
 
 ${_PROJECT_HOME}scripts/stopHadoop.sh
 ${_PROJECT_HOME}scripts/removeDatasetDir.sh

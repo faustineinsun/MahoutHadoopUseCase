@@ -1,5 +1,5 @@
 #! /bin/bash
-_PROJECT_HOME="/Users/feiyu/workspace/MahoutHadoopUseCase/"
+_PROJECT_HOME=$MahoutHadoopUseCase_HOME
 _DATA_DIR="src/main/resources/datasets/"
 cd $_PROJECT_HOME
 rm -rf ${_DATA_DIR}*
